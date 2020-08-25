@@ -1,0 +1,167 @@
+body {
+    font-family    : 'Nunito', sans-serif;
+    font-family    : 'Roboto', sans-serif;
+    margin-left    : auto;
+    margin-right   : auto;
+    width          : 80%;
+    font-size      : 20px;
+    justify-content: center;
+    display        : flex;
+    flex-direction : column;
+    position       : relative;
+}
+
+.input_container {
+
+    margin-top: 75px;
+
+
+}
+
+.task_nametext,
+.assignee_text {
+    margin-top   : 13px;
+    width        : 165px;
+    margin-left  : 18px;
+    margin-right : 15px;
+    height       : 30px;
+    border       : 2px solid gray;
+    border-radius: 5px;
+}
+
+.task_nametext::placeholder,
+.assignee_text::placeholder {
+    padding-left: 6px;
+}
+
+#task_namelabel {
+    margin-left: 38px;
+}
+
+.add_button {
+    margin-top   : 13px;
+    width        : 120px;
+    padding      : 8px;
+    height       : 35px;
+    border       : 2px solid gray;
+    border-radius: 5px;
+}
+
+.search_container {
+    margin-top : 30px;
+    border-top : 2px solid black;
+    width      : 470px;
+    margin-left: 30px;
+    position   : relative;
+}
+
+.close_button {
+    background-color: white;
+    border          : none;
+    position        : absolute;
+    right           : 7px;
+    top             : 25px;
+
+}
+
+.search {
+    margin-top: 15px;
+    width     : 90%;
+    border    : 10px #c9c9ce solid;
+    padding   : 7px 0px 7px 30px;
+
+}
+
+.search::placeholder {
+    padding-left: 15px;
+}
+
+.fa-search {
+    position: absolute;
+    left    : 26px;
+    top     : 30px;
+    color   : gray;
+}
+
+section {
+    margin-top   : 17px;
+    margin-bottom: 28px;
+    border       : 2px solid black;
+    width        : 470px;
+    height       : 120px;
+
+}
+
+.task_container {
+    width      : fit-content;
+    margin-left: 30px;
+
+}
+
+.task_section,
+.assignee_section {
+    display        : flex;
+    flex-direction : row;
+    justify-content: space-between;
+
+}
+
+.task_name,
+.assignee_value {
+    padding: 10px;
+    margin : 0px;
+}
+
+.fa-trash,
+.fa-check-circle {
+    padding: 10px;
+}
+
+.confirm_delete {
+    opacity      : 0;
+    z-index      : 99 !important;
+    position     : absolute;
+    top          : 360px;
+    left         : 129px;
+    font-size    : 18px;
+    box-shadow   : 5px 10px 18px #888888;
+    width        : 279px;
+    height       : 100px;
+    border-radius: 6px;
+
+}
+
+.confirm_delete>p {
+    padding-left: 10px;
+}
+
+.confirm_delete>div {
+    padding-left: 140px;
+}
+
+.confirm_delete>div>button {
+    border : none;
+    padding: 7px;
+}
+
+.cancle_button {
+    background-color: white;
+}
+
+.delete_button {
+    background-color: #2196F3;
+    color           : white;
+    border-radius   : 3px;
+}
+
+footer {
+    display        : flex;
+    justify-content: flex-end;
+    margin-top     : 30px;
+    width          : 470px;
+
+}
+
+footer>span {
+    padding-right: 30px;
+}

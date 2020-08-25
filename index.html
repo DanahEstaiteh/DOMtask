@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital@1&family=Roboto:ital,wght@1,300&display=swap"
+        rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
+    <script src="index.js" defer></script>
+</head>
+
+<body>
+    <form class="input_container">
+
+        <label id="task_namelabel" for="task_name">
+            Task
+        </label>
+        <input type="text" class="task_nametext" name="" id="task_name" placeholder="placeholder"><br>
+
+        <label id="assignee" for="assignee">
+            Assignee
+        </label>
+        <input type="text" class="assignee_text" name="" id="assignee" placeholder="placeholder">
+
+        <button class="add_button" name="add" onclick="addTask(); return false;">Add</button>
+
+    </form>
+    <div class="search_container">
+        <input type="text" placeholder=" Search" style="font-family:Arial, FontAwesome" class="search" id="search"
+            onkeypress="search()" />
+        <i class="fa fa-search" aria-hidden="true"></i>
+        <button class="close_button" onclick="emptyText()"><i class="fa fa-times fa-2x" aria-hidden="true"></i></button>
+    </div>
+
+
+    <div class="task_container">
+    </div>
+    <div class="confirm_delete" id="confirm_delete">
+        <p>Are you sure Delete This Task</p>
+        <div>
+            <button class="cancle_button" onclick="hideConfirmDelete()">Cancle</button>
+            <button class="delete_button" onclick="deleteTask()">Delete</button>
+        </div>
+    </div>
+</body>
+<footer>
+    ToDo: <span id="todo"></span>
+    Done: <span id="done"></span>
+</footer>
+
+</html>
