@@ -19,8 +19,9 @@ container.addEventListener('click', iconsClick);
 function deleteTask() {
   deletedSection = taskDeleted.closest('section');
   deleteFromArray(deletedSection)
-  container.removeChild(deletedSection);
+  container.innerHTML="";
   hideConfirmDelete()
+  showTasks(tasks,tasks.length);
 }
 function changeStatus(ev) {
   targetSection = ev.closest('section');
